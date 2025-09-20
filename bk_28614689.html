@@ -46,7 +46,7 @@
     var isParentWindow = false;
     var rowIds = "113,114,130,146,147,148,218,14";
     var MJsData = {};
-    var CURRENCY_SIGN = '£¤';
+    var CURRENCY_SIGN = 'ï¿½ï¿½';
     var tncode_div = null;
     var ALIYUN_OSS_DOMAIN = "https://s.dlssyht.cn/";
     var isTjModelSupportSearchBlankPage = "0";
@@ -64,7 +64,7 @@
         customerService: null,
         customerServiceIsNew: 1
     };
-    var $pTranslateLanguageJson = [{"name":"¼òÌåÖÐÎÄ","alias":"&#31616;&#20307;&#20013;&#25991;","value":"chinese_simplified"},{"name":"·±ÌåÖÐÎÄ","alias":"&#32321;&#20307;&#20013;&#25991;","value":"chinese_traditional"},{"name":"Î÷°àÑÀÎÄ","alias":"Espa&#241;a","value":"spanish"},{"name":"°¢À­²®ÎÄ","alias":"&#1593;&#1585;&#1576; .","value":"arabic"},{"name":"Ó¢ÎÄ","alias":"English","value":"english"},{"name":"ÈÕÎÄ","alias":"&#26085;&#26412;","value":"japanese"},{"name":"·¨ÎÄ","alias":"Fran&#231;ais","value":"french"},{"name":"¶íÎÄ","alias":"&#1056;&#1086;&#1089;&#1089;&#1080;&#1103;","value":"russian"},{"name":"º«ÎÄ","alias":"&#54620;&#44397;","value":"korean"},{"name":"µÂÎÄ","alias":"Deutschland","value":"deutsch"},{"name":"ÆÏÌÑÑÀÓï","alias":"Portugal","value":"portuguese"},{"name":"²¨Ë¹Óï","alias":"&#1662;&#1585;&#1587;&#1740;&#1575;","value":"persian"},{"name":"Ï£À°Óï","alias":"&#917;&#955;&#955;&#940;&#948;&#945;","value":"greek"},{"name":"ÍÁ¶úÆäÓï","alias":"T&#252;rk&#231;e","value":"turkish"},{"name":"Ì©Óï","alias":"&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;","value":"thai"},{"name":"Ô½ÄÏÓï","alias":"Vi&#7879;t Nam","value":"vietnamese"},{"name":"Òâ´óÀûÓï","alias":"Italia","value":"italian"},{"name":"ÂíÀ´Óï","alias":"Malay","value":"malay"},{"name":"ºÉÀ¼Óï","alias":"Nederland","value":"dutch"},{"name":"ÈðµäÓï","alias":"Sverige","value":"swedish"},{"name":"ÃÏ¼ÓÀ­Óï","alias":"&#2476;&#2494;&#2434;&#2482;&#2494;","value":"bengali"},{"name":"ÎÚ¶û¶¼Óï","alias":"&#1575;&#1608;&#1585;&#1583;&#1608;","value":"urdu"},{"name":"Ë¹ÍßÏ£ÀïÓï","alias":"Kiswahili","value":"swahili"},{"name":"ÐÙÑÀÀûÓï","alias":"Magyarorsz&#225;g","value":"hungarian"},{"name":"²¨À¼Óï","alias":"Polska","value":"polish"},{"name":"ÂÞÂíÄáÑÇÓï","alias":"Rom&#226;nia","value":"romanian"},{"name":"Å²ÍþÓï","alias":"Norge","value":"norwegian"},{"name":"µ¤ÂóÓï","alias":"Danmark","value":"danish"},{"name":"·ÒÀ¼Óï","alias":"Suomi","value":"finnish"},{"name":"½Ý¿ËÓï","alias":"&#268;e&#353;tina","value":"czech"},{"name":"Ë¹Âå·¥¿ËÓï","alias":"Slovensko","value":"slovak"},{"name":"¿ËÂÞµØÑÇÓï","alias":"Hrvatska","value":"croatian"},{"name":"À­ÍÑÎ¬ÑÇÓï","alias":"Latvija","value":"latvian"},{"name":"°®É³ÄáÑÇÓï","alias":"Eesti","value":"estonian"},{"name":"Ë¹ÂåÎÄÄáÑÇÓï","alias":"Slovenija","value":"slovene"},{"name":"Á¢ÌÕÍðÓï","alias":"Lietuva","value":"lithuanian"},{"name":"¸ñÂ³¼ªÑÇÓï","alias":"&#4310;&#4317;&#4320;&#4308;&#4310;&#4312;&#4304;world. kgm","value":"georgian"},{"name":"°¢¶û°ÍÄáÑÇÓï","alias":"Shqip&#235;ria","value":"albanian"},{"name":"°¢Ä·¹þÀ­Óï","alias":"&#4768;&#4638;&#4651;","value":"amharic"},{"name":"°¢Èû°Ý½®Óï","alias":"Azerbaijan","value":"azerbaijani"}];
+    var $pTranslateLanguageJson = [{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#31616;&#20307;&#20013;&#25991;","value":"chinese_simplified"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#32321;&#20307;&#20013;&#25991;","value":"chinese_traditional"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Espa&#241;a","value":"spanish"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#1593;&#1585;&#1576; .","value":"arabic"},{"name":"Ó¢ï¿½ï¿½","alias":"English","value":"english"},{"name":"ï¿½ï¿½ï¿½ï¿½","alias":"&#26085;&#26412;","value":"japanese"},{"name":"ï¿½ï¿½ï¿½ï¿½","alias":"Fran&#231;ais","value":"french"},{"name":"ï¿½ï¿½ï¿½ï¿½","alias":"&#1056;&#1086;&#1089;&#1089;&#1080;&#1103;","value":"russian"},{"name":"ï¿½ï¿½ï¿½ï¿½","alias":"&#54620;&#44397;","value":"korean"},{"name":"ï¿½ï¿½ï¿½ï¿½","alias":"Deutschland","value":"deutsch"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Portugal","value":"portuguese"},{"name":"ï¿½ï¿½Ë¹ï¿½ï¿½","alias":"&#1662;&#1585;&#1587;&#1740;&#1575;","value":"persian"},{"name":"Ï£ï¿½ï¿½ï¿½ï¿½","alias":"&#917;&#955;&#955;&#940;&#948;&#945;","value":"greek"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"T&#252;rk&#231;e","value":"turkish"},{"name":"Ì©ï¿½ï¿½","alias":"&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;","value":"thai"},{"name":"Ô½ï¿½ï¿½ï¿½ï¿½","alias":"Vi&#7879;t Nam","value":"vietnamese"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Italia","value":"italian"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Malay","value":"malay"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Nederland","value":"dutch"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Sverige","value":"swedish"},{"name":"ï¿½Ï¼ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#2476;&#2494;&#2434;&#2482;&#2494;","value":"bengali"},{"name":"ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#1575;&#1608;&#1585;&#1583;&#1608;","value":"urdu"},{"name":"Ë¹ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½","alias":"Kiswahili","value":"swahili"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Magyarorsz&#225;g","value":"hungarian"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Polska","value":"polish"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Rom&#226;nia","value":"romanian"},{"name":"Å²ï¿½ï¿½ï¿½ï¿½","alias":"Norge","value":"norwegian"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Danmark","value":"danish"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Suomi","value":"finnish"},{"name":"ï¿½Ý¿ï¿½ï¿½ï¿½","alias":"&#268;e&#353;tina","value":"czech"},{"name":"Ë¹ï¿½å·¥ï¿½ï¿½ï¿½ï¿½","alias":"Slovensko","value":"slovak"},{"name":"ï¿½ï¿½ï¿½Þµï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Hrvatska","value":"croatian"},{"name":"ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½","alias":"Latvija","value":"latvian"},{"name":"ï¿½ï¿½É³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Eesti","value":"estonian"},{"name":"Ë¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Slovenija","value":"slovene"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Lietuva","value":"lithuanian"},{"name":"ï¿½ï¿½Â³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#4310;&#4317;&#4320;&#4308;&#4310;&#4312;&#4304;world. kgm","value":"georgian"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"Shqip&#235;ria","value":"albanian"},{"name":"ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","alias":"&#4768;&#4638;&#4651;","value":"amharic"},{"name":"ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½","alias":"Azerbaijan","value":"azerbaijani"}];
 
     if(GData.BAI_DU_MAP_AK){
         sessionStorage.setItem('BAI_DU_MAP_AK', GData.BAI_DU_MAP_AK)
@@ -144,7 +144,7 @@
         </div>
     </div>    <div data-fixed="0" data-fixedx="-1" id="evMo_Sanky" class="ev-module-edit" data-big="1" data-small="1" data-threetype="0" style="width:439px; height:19px; left:313px; top:28px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_Sanky">
-           <h1 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-1"><strong><span style="color: rgb(255, 255, 255); font-size: 14px;">info@promodgroup.com.au </span></strong></h1>
+           <h1 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-1"><strong><span style="color: rgb(255, 255, 255); font-size: 14px;">info@promodgroup.com.au </span></strong></h1>
         </div>
     </div>    <div data-fixed="0" data-fixedx="-1" id="evMo_kFqpJ" class="ev-module-edit" data-big="2" data-small="1" data-threetype="0" style="width:22px; height:23px; left:530px; top:26px; z-index:3;">
         <div class="ev-module-edit-box " id="Mo_kFqpJ">
@@ -157,7 +157,7 @@
         </div>
     </div>    <div data-fixed="0" data-fixedx="-1" id="evMo_VI85N" class="ev-module-edit" data-big="1" data-small="1" data-threetype="0" style="width:439px; height:19px; left:567px; top:30px; z-index:4;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_VI85N">
-           <h1 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-1"><strong><span style="color:#FFFFFF;font-size:14px;">03 8637 0821 </span></strong></h1>
+           <h1 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-1"><strong><span style="color:#FFFFFF;font-size:14px;">03 8637 0821 </span></strong></h1>
         </div>
     </div>    <div data-fixed="0" data-fixedx="-1" id="evMo_v8j2U" class="ev-module-edit" data-big="2" data-small="1" data-threetype="0" style="width:154px; height:40px; left:1367px; top:19px; z-index:5;">
         <div class="ev-module-edit-box " id="Mo_v8j2U">
@@ -323,11 +323,11 @@
             <div class="CModulePA" style="height:305px;">
                     <div id="evMo_UgrcT" class="ev-module-edit" data-big="1" data-small="1" data-threetype="0" style="width:439px; height:70px; left:264px; top:112px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_UgrcT">
-           <h1 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-1"><strong><span style="color:#FFFFFF;font-size:50px;">Why Modular</span></strong></h1>
+           <h1 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-1"><strong><span style="color:#FFFFFF;font-size:50px;">Why Modular</span></strong></h1>
         </div>
     </div>    <div id="evMo_Kl0BW" class="ev-module-edit" data-big="1" data-small="1" data-threetype="0" style="width:439px; height:32px; left:264px; top:188px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_Kl0BW">
-           <h1 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-1"><span style="color:#FFFFFF;font-size:16px;"><p><span style="font-size:16px;">Home&nbsp; &nbsp; &nbsp;&gt;&nbsp; &nbsp; &nbsp;<u>Why Modular</u></span></p></span></h1>
+           <h1 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-1"><span style="color:#FFFFFF;font-size:16px;"><p><span style="font-size:16px;">Home&nbsp; &nbsp; &nbsp;&gt;&nbsp; &nbsp; &nbsp;<u>Why Modular</u></span></p></span></h1>
         </div>
     </div>
             </div>
@@ -349,11 +349,11 @@
         </div>
     </div>    <div id="evMo_pLTQk" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:602px; height:187px; left:280px; top:183px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_pLTQk">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:20px;color:#1F1F1F;line-height:1.4;"><strong>Our Industry had not seen proper innovation through clever systems, sustainable materials, and razor sharp prices.... Until PBG launched in 2023</strong></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:20px;color:#1F1F1F;line-height:1.4;"><strong>Our Industry had not seen proper innovation through clever systems, sustainable materials, and razor sharp prices.... Until PBG launched in 2023</strong></span></h2>
         </div>
     </div>    <div id="evMo_9vMQD" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:602px; height:187px; left:287px; top:292px; z-index:3;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_9vMQD">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>¡¤ </strong>Highly versatile ¨C replacement for cement and plaster products.</span></h2><h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>¡¤ </strong>Constructed from ecofriendly and non-hazardous elements such as Magnesium and fiberglass mesh.</span></h2><h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>¡¤ </strong>Incredibly high FRL, Impact resistant &amp; Anti Mould.</span></h2><h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>¡¤ </strong>Proven to positively influence your property value providing high thermal and sound performance.</span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>ï¿½ï¿½ </strong>Highly versatile ï¿½C replacement for cement and plaster products.</span></h2><h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>ï¿½ï¿½ </strong>Constructed from ecofriendly and non-hazardous elements such as Magnesium and fiberglass mesh.</span></h2><h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>ï¿½ï¿½ </strong>Incredibly high FRL, Impact resistant &amp; Anti Mould.</span></h2><h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.4;"><strong>ï¿½ï¿½ </strong>Proven to positively influence your property value providing high thermal and sound performance.</span></h2>
         </div>
     </div>    <div id="evMo_XdqHg" class="ev-module-edit" data-big="2" data-small="2" data-threetype="0" style="width:575px; height:400px; left:950px; top:153px; z-index:4;">
         <div class="ev-module-edit-box " id="Mo_XdqHg">
@@ -375,7 +375,7 @@
         </div>
     </div>    <div id="evMo_jW6Zc" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:950px; height:187px; left:425px; top:638px; z-index:6;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_jW6Zc">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:36px;color:#1F1F1F;line-height:1.4;"><strong>Promod¡¯s Innovative Solutions</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:36px;color:#1F1F1F;line-height:1.4;"><strong>Promodï¿½ï¿½s Innovative Solutions</strong></span></h2>
         </div>
     </div>    <div id="evMo_Vj7oE" class="ev-module-edit" data-big="2" data-small="1" data-threetype="0" style="width:1500px; height:859px; left:132px; top:698px; z-index:7;">
         <div class="ev-module-edit-box " id="Mo_Vj7oE">
@@ -388,51 +388,51 @@
         </div>
     </div>    <div id="evMo_pKbEK" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:264px; top:845px; z-index:8;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_pKbEK">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Promod panels are water resistant and have been tested to Australian Standard 4284:2008 Weatherproofing ¨C PASSED</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Promod panels are water resistant and have been tested to Australian Standard 4284:2008 Weatherproofing ï¿½C PASSED</span></h2>
         </div>
     </div>    <div id="evMo_2X3dj" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:588px; top:845px; z-index:9;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_2X3dj">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Non-combustible ¨C Tested to Australian Standard 1530.1 Non-combustibility ¨C PASSED</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Non-combustible ï¿½C Tested to Australian Standard 1530.1 Non-combustibility ï¿½C PASSED</span></h2>
         </div>
     </div>    <div id="evMo_9gKud" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:912px; top:845px; z-index:10;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_9gKud">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Tested to Australian Standard 1530.4. Promod panels achieved a Fire Resistance Level (FRL) of 60/60/60 &amp; 90/90/90</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Tested to Australian Standard 1530.4. Promod panels achieved a Fire Resistance Level (FRL) of 60/60/60 &amp; 90/90/90</span></h2>
         </div>
     </div>    <div id="evMo_g2TZH" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:260px; height:125px; left:1242px; top:845px; z-index:11;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_g2TZH">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Acoustic qualities ¨C Excellent! Promod¡¯s Fireless Party Wall System achieves an acoustic rating of no less than Rw+Ctr 50</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Acoustic qualities ï¿½C Excellent! Promodï¿½ï¿½s Fireless Party Wall System achieves an acoustic rating of no less than Rw+Ctr 50</span></h2>
         </div>
     </div>    <div id="evMo_5yene" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:264px; top:1102px; z-index:12;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_5yene">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Property values ¨C Can be finished with any external, ascetically pleasing finishing system that enhances the property¡¯s value.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Property values ï¿½C Can be finished with any external, ascetically pleasing finishing system that enhances the propertyï¿½ï¿½s value.</span></h2>
         </div>
     </div>    <div id="evMo_V90Iq" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:588px; top:1102px; z-index:13;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_V90Iq">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Maintenance ¨C Low maintenance due to the panels rot resistance and longevity</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Maintenance ï¿½C Low maintenance due to the panels rot resistance and longevity</span></h2>
         </div>
     </div>    <div id="evMo_XDbYC" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:912px; top:1102px; z-index:14;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_XDbYC">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Durability ¨C High Impact.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Durability ï¿½C High Impact.</span></h2>
         </div>
     </div>    <div id="evMo_1KKGg" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:1237px; top:1102px; z-index:15;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_1KKGg">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Mould/mildew ¨C Promod panels do not support the growth of mildew or mold.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Mould/mildew ï¿½C Promod panels do not support the growth of mildew or mold.</span></h2>
         </div>
     </div>    <div id="evMo_VBCKh" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:125px; left:264px; top:1357px; z-index:16;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_VBCKh">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Thermal qualities ¨C Promod panels have excellent thermal qualities.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Thermal qualities ï¿½C Promod panels have excellent thermal qualities.</span></h2>
         </div>
     </div>    <div id="evMo_wweGj" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:128px; left:588px; top:1355px; z-index:17;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_wweGj">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Building costs ¨C Only standard carpentry tools are required to install Promod panels and combined with quick installation systems.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Building costs ï¿½C Only standard carpentry tools are required to install Promod panels and combined with quick installation systems.</span></h2>
         </div>
     </div>    <div id="evMo_E42Yf" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:128px; left:912px; top:1355px; z-index:18;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_E42Yf">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Environmentally friendly ¨C Many environmental benefits come with Promod panels, one being the mining of the main element, magnesium.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">Environmentally friendly ï¿½C Many environmental benefits come with Promod panels, one being the mining of the main element, magnesium.</span></h2>
         </div>
     </div>    <div id="evMo_HOcPW" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:269px; height:128px; left:1237px; top:1355px; z-index:19;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_HOcPW">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">The curing process captures carbon dioxide and is conducted at room temperature which makes the curing of our Promod panels an extremely green process. </span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:16px;color:#1F1F1F;line-height:1.6;">The curing process captures carbon dioxide and is conducted at room temperature which makes the curing of our Promod panels an extremely green process. </span></h2>
         </div>
     </div>
             </div>
@@ -449,11 +449,11 @@
                 <div class="ev-container-bg"></div>
                     <div id="evMo_cajvn" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:142px; height:56px; left:39px; top:36px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_cajvn">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 40px; color: rgb(31, 31, 31); line-height: 1.4;"><strong>300+</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 40px; color: rgb(31, 31, 31); line-height: 1.4;"><strong>300+</strong></span></h2>
         </div>
     </div>    <div id="evMo_Yz79O" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:198px; height:30px; left:11px; top:92px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_Yz79O">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:14px;color:#1F1F1F;line-height:1.4;">Homes Use Promod</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:14px;color:#1F1F1F;line-height:1.4;">Homes Use Promod</span></h2>
         </div>
     </div>
             </div>
@@ -464,11 +464,11 @@
                 <div class="ev-container-bg"></div>
                     <div id="evMo_dYAzB" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:142px; height:56px; left:39px; top:36px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_dYAzB">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:40px;color:#1F1F1F;line-height:1.4;"><strong>5+</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:40px;color:#1F1F1F;line-height:1.4;"><strong>5+</strong></span></h2>
         </div>
     </div>    <div id="evMo_SUmqa" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:198px; height:30px; left:11px; top:92px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_SUmqa">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 12px; color: rgb(31, 31, 31); line-height: 1.4;">Innovative Wall Systems</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 12px; color: rgb(31, 31, 31); line-height: 1.4;">Innovative Wall Systems</span></h2>
         </div>
     </div>
             </div>
@@ -479,11 +479,11 @@
                 <div class="ev-container-bg"></div>
                     <div id="evMo_hGde7" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:142px; height:56px; left:39px; top:36px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_hGde7">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:40px;color:#1F1F1F;line-height:1.4;"><strong>18+</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:40px;color:#1F1F1F;line-height:1.4;"><strong>18+</strong></span></h2>
         </div>
     </div>    <div id="evMo_Mprlv" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:198px; height:30px; left:11px; top:92px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_Mprlv">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:12px;color:#1F1F1F;line-height:1.4;">Resellers Across Australia</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:12px;color:#1F1F1F;line-height:1.4;">Resellers Across Australia</span></h2>
         </div>
     </div>
             </div>
@@ -494,11 +494,11 @@
                 <div class="ev-container-bg"></div>
                     <div id="evMo_uJvc2" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:142px; height:56px; left:39px; top:36px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_uJvc2">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:40px;color:#1F1F1F;line-height:1.4;"><strong>50+</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:40px;color:#1F1F1F;line-height:1.4;"><strong>50+</strong></span></h2>
         </div>
     </div>    <div id="evMo_nN61Q" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:198px; height:30px; left:11px; top:92px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_nN61Q">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:12px;color:#1F1F1F;line-height:1.4;"><span style="font-size:16px;">Ongoing projects</span></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:12px;color:#1F1F1F;line-height:1.4;"><span style="font-size:16px;">Ongoing projects</span></span></h2>
         </div>
     </div>
             </div>
@@ -514,11 +514,11 @@
         </div>
     </div>    <div id="evMo_LKy2T" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:883px; height:235px; left:288px; top:118px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_LKy2T">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 34px; color: rgb(31, 31, 31); line-height: 1.4;"><strong>Making A Real Difference To Aussies</strong></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 34px; color: rgb(31, 31, 31); line-height: 1.4;"><strong>Making A Real Difference To Aussies</strong></span></h2>
         </div>
     </div>    <div id="evMo_ve7Cg" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:735px; height:255px; left:288px; top:203px; z-index:3;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_ve7Cg">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;line-height:1.4;"><strong><span style="line-height:1.6;">Keeps you safe: </span></strong><span style="font-size:16px;line-height:1.6;">Limits the spread of fire.</span></span></h2><p><span style="font-size:22px;color:#000000;line-height:1.4;"><span style="font-size:16px;line-height:1;"><br></span></span></p><h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;line-height:1.4;"><strong><span style="line-height:1.6;">Keeps builders safe: </span></strong><span style="font-size:16px;line-height:1.6;">There are no dangerous materials used in our cladding. No asbestos. No glue. This makes cutting and handling our board easy. Installing has never been easier, with no special cutting tools or clothing required. Standard PPE recommended.</span></span></h2><p><br></p><h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;line-height:1.4;"><strong><span style="line-height:1.6;">Mould resistant: </span></strong><span style="font-size:16px;line-height:1.6;">PBG panels have been constructed to not support the growth of mould.</span></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;line-height:1.4;"><strong><span style="line-height:1.6;">Keeps you safe: </span></strong><span style="font-size:16px;line-height:1.6;">Limits the spread of fire.</span></span></h2><p><span style="font-size:22px;color:#000000;line-height:1.4;"><span style="font-size:16px;line-height:1;"><br></span></span></p><h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;line-height:1.4;"><strong><span style="line-height:1.6;">Keeps builders safe: </span></strong><span style="font-size:16px;line-height:1.6;">There are no dangerous materials used in our cladding. No asbestos. No glue. This makes cutting and handling our board easy. Installing has never been easier, with no special cutting tools or clothing required. Standard PPE recommended.</span></span></h2><p><br></p><h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;line-height:1.4;"><strong><span style="line-height:1.6;">Mould resistant: </span></strong><span style="font-size:16px;line-height:1.6;">PBG panels have been constructed to not support the growth of mould.</span></span></h2>
         </div>
     </div>    <div id="evMo_XcXi7" class="ev-module-edit" data-big="7" data-small="1" data-threetype="1" style="width:202px; height:60px; left:288px; top:440px; z-index:4;">
         <div class="ev-module-edit-box" id="Mo_XcXi7">
@@ -531,7 +531,7 @@
         </div>
     </div>    <div id="evMo_KUExm" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:883px; height:57px; left:458px; top:583px; z-index:9;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_KUExm">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 36px; color: rgb(0, 0, 0); line-height: 1.4;"><strong>Our Products</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 36px; color: rgb(0, 0, 0); line-height: 1.4;"><strong>Our Products</strong></span></h2>
         </div>
     </div>
             </div>
@@ -567,7 +567,7 @@
                                 <td valign="top" class="MoNameM">
                                     <strong class="NameTxt">
                                             <a href="###">
-                                                ±êÌâ
+                                                ï¿½ï¿½ï¿½ï¿½
                                             </a>
                                     </strong>
                                 </td>
@@ -614,7 +614,7 @@
     <a class="pics ">
       <span class="pic " style=" width:475px; height:360px;">
         <table><tr><td>
-          <img alt="Çé»³Ã»ÁË£ºÎ¢Èí¹Ø±ÕWindowsÄÚÖÃÐÝÏÐÓÎÏ·" src="" class=" lazy-loading" data-original-src="https://aimg8.dlssyht.cn/u/2310579/module_pic_con/v1/10586/21171981_1754477325.png?x-oss-process=image/resize,limit_0,m_mfit,w_475,h_360/crop,w_475,h_360,g_center">
+          <img alt="ï¿½é»³Ã»ï¿½Ë£ï¿½Î¢ï¿½ï¿½ï¿½Ø±ï¿½Windowsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·" src="" class=" lazy-loading" data-original-src="https://aimg8.dlssyht.cn/u/2310579/module_pic_con/v1/10586/21171981_1754477325.png?x-oss-process=image/resize,limit_0,m_mfit,w_475,h_360/crop,w_475,h_360,g_center">
         </td></tr></table>
         
       </span>
@@ -622,7 +622,7 @@
     <div class="pic-attr" style="">
       
       <h3 class="pic-title">
-        <a class="">Çé»³Ã»ÁË£ºÎ¢Èí¹Ø±ÕWindowsÄÚÖÃÐÝÏÐÓÎÏ·</a>
+        <a class="">ï¿½é»³Ã»ï¿½Ë£ï¿½Î¢ï¿½ï¿½ï¿½Ø±ï¿½Windowsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·</a>
       </h3>
       
     </div>
@@ -632,7 +632,7 @@
     <a class="pics ">
       <span class="pic " style=" width:475px; height:360px;">
         <table><tr><td>
-          <img alt="È«¹ú½øÈë·ÀÑ´×î¹Ø¼üÊ±ÆÚ£¬Ò»¸öÔÂÄÚ»òÓÐ2-3¸öÌ¨·çµÇÂ½" src="" class=" lazy-loading" data-original-src="https://aimg8.dlssyht.cn/u/2310579/module_pic_con/v1/10586/21171982_1754477345.png?x-oss-process=image/resize,limit_0,m_mfit,w_475,h_360/crop,w_475,h_360,g_center">
+          <img alt="È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ï¿½Ø¼ï¿½Ê±ï¿½Ú£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½2-3ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½Â½" src="" class=" lazy-loading" data-original-src="https://aimg8.dlssyht.cn/u/2310579/module_pic_con/v1/10586/21171982_1754477345.png?x-oss-process=image/resize,limit_0,m_mfit,w_475,h_360/crop,w_475,h_360,g_center">
         </td></tr></table>
         
       </span>
@@ -640,7 +640,7 @@
     <div class="pic-attr" style="">
       
       <h3 class="pic-title">
-        <a class="">È«¹ú½øÈë·ÀÑ´×î¹Ø¼üÊ±ÆÚ£¬Ò»¸öÔÂÄÚ»òÓÐ2-3¸öÌ¨·çµÇÂ½</a>
+        <a class="">È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ï¿½Ø¼ï¿½Ê±ï¿½Ú£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½2-3ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½Â½</a>
       </h3>
       
     </div>
@@ -650,7 +650,7 @@
     <a class="pics ">
       <span class="pic " style=" width:475px; height:360px;">
         <table><tr><td>
-          <img alt="Ê×Åú¶þº¢ÃÇ¸ÃÈëÔ°ÁË ÓÐµØ·½Ó×¶ùÔ°¿ªÆô¡°Ò¡ºÅ¡±Ä£Ê½" src="" class=" lazy-loading" data-original-src="https://aimg8.dlssyht.cn/u/2310579/module_pic_con/v1/10586/21171983_1754477355.png?x-oss-process=image/resize,limit_0,m_mfit,w_475,h_360/crop,w_475,h_360,g_center">
+          <img alt="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ ï¿½ÐµØ·ï¿½ï¿½×¶ï¿½Ô°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¡ï¿½Å¡ï¿½Ä£Ê½" src="" class=" lazy-loading" data-original-src="https://aimg8.dlssyht.cn/u/2310579/module_pic_con/v1/10586/21171983_1754477355.png?x-oss-process=image/resize,limit_0,m_mfit,w_475,h_360/crop,w_475,h_360,g_center">
         </td></tr></table>
         
       </span>
@@ -658,7 +658,7 @@
     <div class="pic-attr" style="">
       
       <h3 class="pic-title">
-        <a class="">Ê×Åú¶þº¢ÃÇ¸ÃÈëÔ°ÁË ÓÐµØ·½Ó×¶ùÔ°¿ªÆô¡°Ò¡ºÅ¡±Ä£Ê½</a>
+        <a class="">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ ï¿½ÐµØ·ï¿½ï¿½×¶ï¿½Ô°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¡ï¿½Å¡ï¿½Ä£Ê½</a>
       </h3>
       
     </div>
@@ -694,19 +694,19 @@
         </div>
     </div>    <div id="evMo_ylT5C" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:450px; height:211px; left:0px; top:149px; z-index:3;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_ylT5C">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color: rgb(255, 255, 255); font-size: 20px; line-height: 2;">Fireless</span></p><p style="text-align:center;"><span style="color: rgb(255, 255, 255); font-size: 14px; line-height: 2;">Party Wall System 18mm</span></p><p style="text-align:center;"><br></p></strong></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color: rgb(255, 255, 255); font-size: 20px; line-height: 2;">Fireless</span></p><p style="text-align:center;"><span style="color: rgb(255, 255, 255); font-size: 14px; line-height: 2;">Party Wall System 18mm</span></p><p style="text-align:center;"><br></p></strong></span></h2>
         </div>
     </div>    <div id="evMo_2vC3L" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:450px; height:211px; left:450px; top:149px; z-index:4;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_2vC3L">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color:#FFFFFF;font-size:20px;line-height:2;">Firestop</span></p><p style="text-align:center;"><span style="color:#FFFFFF;font-size:14px;line-height:2;">Zero Allotment 14mm</span></p></strong></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color:#FFFFFF;font-size:20px;line-height:2;">Firestop</span></p><p style="text-align:center;"><span style="color:#FFFFFF;font-size:14px;line-height:2;">Zero Allotment 14mm</span></p></strong></span></h2>
         </div>
     </div>    <div id="evMo_AtDwo" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:450px; height:211px; left:900px; top:149px; z-index:5;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_AtDwo">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color:#FFFFFF;font-size:20px;line-height:2;">Vertex</span></p><p style="text-align:center;"><span style="color:#FFFFFF;font-size:14px;line-height:2;">Feature Cladding 10mm</span></p></strong></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color:#FFFFFF;font-size:20px;line-height:2;">Vertex</span></p><p style="text-align:center;"><span style="color:#FFFFFF;font-size:14px;line-height:2;">Feature Cladding 10mm</span></p></strong></span></h2>
         </div>
     </div>    <div id="evMo_k9Fu2" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:450px; height:211px; left:1350px; top:149px; z-index:6;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_k9Fu2">
-           <h2 style="font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color:#FFFFFF;font-size:20px;line-height:2;">Firebloc</span></p><p style="text-align:center;"><span style="color:#FFFFFF;font-size:14px;line-height:2;">Boundary wall System 10mm panel</span></p></strong></span></h2>
+           <h2 style="font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:18px;"><strong><p style="text-align:center;"><span style="color:#FFFFFF;font-size:20px;line-height:2;">Firebloc</span></p><p style="text-align:center;"><span style="color:#FFFFFF;font-size:14px;line-height:2;">Boundary wall System 10mm panel</span></p></strong></span></h2>
         </div>
     </div>
             </div>
@@ -719,15 +719,15 @@
             <div class="CModulePA" style="height:275px;">
                     <div id="evMo_AX2gD" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:200px; height:47px; left:800px; top:68px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_AX2gD">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:20px;color:#000000;">Get In Touch</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:20px;color:#000000;">Get In Touch</span></h2>
         </div>
     </div>    <div id="evMo_Oqyu3" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:883px; height:57px; left:458px; top:101px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_Oqyu3">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:36px;color:#000000;line-height:1.4;"><strong>Interested in saving on your next project?</strong></span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:36px;color:#000000;line-height:1.4;"><strong>Interested in saving on your next project?</strong></span></h2>
         </div>
     </div>    <div id="evMo_sE6kX" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:769px; height:55px; left:515px; top:165px; z-index:3;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_sE6kX">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 14px; color: rgb(0, 0, 0);">Let us know how we can help or drop us a line and we¡¯ll be in touch real soon.</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 14px; color: rgb(0, 0, 0);">Let us know how we can help or drop us a line and weï¿½ï¿½ll be in touch real soon.</span></h2>
         </div>
     </div>
             </div>
@@ -763,7 +763,7 @@
                                 <td valign="top" class="MoNameM">
                                     <strong class="NameTxt">
                                             <a href="###">
-                                                ÔÚÏß±íµ¥Ìá½»
+                                                ï¿½ï¿½ï¿½ß±ï¿½ï¿½ï¿½ï¿½á½»
                                             </a>
                                     </strong>
                                 </td>
@@ -838,11 +838,11 @@
         </div>
     </div>    <div id="evMo_lqSWp" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:883px; height:57px; left:309px; top:46px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_lqSWp">
-           <h2 style="text-align: left; font-family: Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 20px; color: rgb(0, 0, 0); line-height: 1.4;"><strong>Information Request</strong></span></h2>
+           <h2 style="text-align: left; font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 20px; color: rgb(0, 0, 0); line-height: 1.4;"><strong>Information Request</strong></span></h2>
         </div>
     </div>    <div id="evMo_ykpvF" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:769px; height:55px; left:309px; top:83px; z-index:2;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_ykpvF">
-           <h2 style="text-align: left; font-family: Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;">Submit your plans or get in touch with us for Australia¡¯s top fireproof solutions.</span></h2>
+           <h2 style="text-align: left; font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;">Submit your plans or get in touch with us for Australiaâ€™s top fireproof solutions.</span></h2>
         </div>
     </div>    <div id="evMo_fvN4d" class="ev-module-edit" data-big="2" data-small="2" data-threetype="0" style="width:400px; height:265px; left:1083px; top:0px; z-index:3;">
         <div class="ev-module-edit-box " id="Mo_fvN4d">
@@ -855,7 +855,7 @@
         </div>
     </div>    <div id="evMo_7GjVF" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:323px; height:88px; left:1137px; top:295px; z-index:5;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_7GjVF">
-           <h2 style="text-align: left; font-family: Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:36px;color:#000000;line-height:1.4;"><strong>Contact Info:</strong></span></h2>
+           <h2 style="text-align: left; font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:36px;color:#000000;line-height:1.4;"><strong>Contact Info:</strong></span></h2>
         </div>
     </div>    <div id="evMo_HVa4P" class="ev-module-edit" data-big="2" data-small="1" data-threetype="0" style="width:30px; height:83px; left:1137px; top:378px; z-index:6;">
         <div class="ev-module-edit-box " id="Mo_HVa4P">
@@ -868,11 +868,11 @@
         </div>
     </div>    <div id="evMo_ztanU" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:228px; height:55px; left:1181px; top:383px; z-index:7;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_ztanU">
-           <h2 style="text-align:left;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;">Telephone:03 8637 0821</span></h2>
+           <h2 style="text-align:left;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;">Telephone:03 8637 0821</span></h2>
         </div>
     </div>    <div id="evMo_dI5Sn" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:228px; height:55px; left:1181px; top:429px; z-index:8;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_dI5Sn">
-           <h2 style="text-align:left;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 14px; color: rgb(0, 0, 0); line-height: 1.8;">Address: Level 12, 350 Collins St Melbourne VIC 3000 Australia</span></h2>
+           <h2 style="text-align:left;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 14px; color: rgb(0, 0, 0); line-height: 1.8;">Address: Level 12, 350 Collins St Melbourne VIC 3000 Australia</span></h2>
         </div>
     </div>
             </div>
@@ -1189,7 +1189,7 @@
         </div>
     </div>    <div id="evMo_uKncc" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:618px; height:62px; left:591px; top:40px; z-index:1;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_uKncc">
-           <h2 style="text-align:center;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 22px; color: rgb(0, 0, 0);">Interested in saving on your next project?</span></h2>
+           <h2 style="text-align:center;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 22px; color: rgb(0, 0, 0);">Interested in saving on your next project?</span></h2>
         </div>
     </div>    <div id="evMo_adw6k" class="ev-module-edit" data-big="7" data-small="1" data-threetype="1" style="width:201px; height:60px; left:763px; top:94px; z-index:2;">
         <div class="ev-module-edit-box" id="Mo_adw6k">
@@ -1227,11 +1227,11 @@
         </div>
     </div>    <div id="evMo_FIig7" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:618px; height:62px; left:270px; top:340px; z-index:6;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_FIig7">
-           <h2 style="text-align:left;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;">Proudly Part of the Promod Family</span></h2>
+           <h2 style="text-align:left;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;">Proudly Part of the Promod Family</span></h2>
         </div>
     </div>    <div id="evMo_yC5Vr" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:618px; height:62px; left:270px; top:376px; z-index:7;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_yC5Vr">
-           <h2 style="text-align:left;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;"><strong>Follow us on:</strong></span></h2>
+           <h2 style="text-align:left;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:22px;color:#000000;"><strong>Follow us on:</strong></span></h2>
         </div>
     </div>    <div id="evMo_9ceZY" class="ev-module-edit" data-big="2" data-small="1" data-threetype="0" style="width:40px; height:40px; left:270px; top:423px; z-index:8;">
         <div class="ev-module-edit-box " id="Mo_9ceZY">
@@ -1262,11 +1262,11 @@
         </div>
     </div>    <div id="evMo_yk3L2" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:618px; height:62px; left:270px; top:557px; z-index:14;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_yk3L2">
-           <h2 style="text-align:left;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;"> 2025 Promod. All Rights Reserved. </span></h2>
+           <h2 style="text-align:left;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size:14px;color:#000000;"> 2025 Promod. All Rights Reserved. </span></h2>
         </div>
     </div>    <div id="evMo_a25iE" class="ev-module-edit" data-big="1" data-small="2" data-threetype="0" style="width:618px; height:62px; left:912px; top:557px; z-index:15;">
         <div class="ev-module-text ev-module-edit-box" id="Mo_a25iE">
-           <h2 style="text-align:right;font-family:Î¢ÈíÑÅºÚ;" class="ev-text-title-2"><span style="font-size: 14px; color: rgb(102, 102, 102);"> Terms &amp; Conditions&nbsp; &nbsp; &nbsp;Privacy Policy</span></h2>
+           <h2 style="text-align:right;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;" class="ev-text-title-2"><span style="font-size: 14px; color: rgb(102, 102, 102);"> Terms &amp; Conditions&nbsp; &nbsp; &nbsp;Privacy Policy</span></h2>
         </div>
     </div>    <div id="evMo_M933I" class="ev-module-edit" data-big="2" data-small="1" data-threetype="0" style="width:278px; height:92px; left:261px; top:236px; z-index:16;">
         <div class="ev-module-edit-box " id="Mo_M933I">
@@ -1373,7 +1373,7 @@
                 e.preventDefault();
                 if ($("#formField_133037").validationEngine("validate")) {
                     var is_message_open = $('#is_message_open_66008').val();
-                    //Èç¿ªÆôÏÔÊ¾»¬¶¯ÑéÖ¤²¢ÇÒ¿ªÆôÁË¶ÌÐÅÑéÖ¤Âë£¬Ôò±íµ¥Ìá½»Ê±²»ÔÚÏÔÊ¾»¬¶¯ÑéÖ¤
+                    //ï¿½ç¿ªï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á½»Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
                     if(is_message_open == 1){
                         $("#isSubmit133037").val(1);
                         $("#formField_133037").submit();
@@ -1445,7 +1445,7 @@
     <script type="text/javascript">
         $(function(){
             $('#pcCountImg').attr('src',"/images/stat.png?username=promodgroup&client=pc&url="+encodeURI(window.location.href)+"&t=1758244674&new=1&userid=2310579&uv_id=8885dcdf38baf4447dbaf504152c2887&session_id=a0kab8s0qpsl7iosmlgo241jl0&search_engine_referer=&title="+encodeURI($("title").text()));
-            // ·ÃÎÊÊ±³¤Í³¼Æ1
+            // ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Í³ï¿½ï¿½1
             setInterval(function(){
                 $('#countTimeImg').attr('src', "/images/count_time.png?t="+Math.random()+"&new=1");
             },60000);
