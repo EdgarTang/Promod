@@ -1132,6 +1132,31 @@
         },1000)
     })
 </script>
+
+<script>
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwvq8q6c_c7T5yU23NujRH0MD8SSCoJHlVyuNE4sf87e8X0A2JsuNdH6ytTx0wnbU2AOg/exec';
+    const statusEl = document.getElementById('status');
+
+    document.getElementById('contact').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    statusEl.textContent = 'Sending...';
+    const fd = new FormData(e.target);
+    const payload = Object.fromEntries(fd.entries());
+
+    try {
+        const r = await fetch(ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams(payload)
+        });
+        statusEl.textContent = r ? 'Sent' : 'Failed';
+    } catch (err) {
+        statusEl.textContent = 'Failed: network_error';
+    }
+    });
+</script>
+
 </body>
     <script type="text/javascript">
         uParse('.editor_content_air', {
